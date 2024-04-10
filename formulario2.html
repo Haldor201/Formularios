@@ -10,29 +10,42 @@
 
 
 <body>
-    <div>
+    <div class="form">
         <form action="">
-
-            
-            <label for="Nombre">Nombre</label>
+            <label for="Nombre">Nombre y Apellidos:</label>
             <input type="text" name="Nombre" id="Nombre">
             <br>
-            <label for="distrito">Distrito</label>
+            <label for="distrito">Distrito:</label>
             <input type="text" name="distrito" id="distrito">
 
             <div>
-                <p>Seleccione que tan seguro es su distrito:</p>
-                <input type="radio" id="huey" name="drone" value="huey" checked />
-                <label for="huey">Inseguro</label>
-    
-                <input type="radio" id="huey" name="drone" value="huey" checked />
-                <label for="huey">Seguro</label>
-    
-                <input type="radio" id="huey" name="drone" value="huey" checked />
-                <label for="huey">Muy Seguro</label>
-
+                <p>Seleccione qué tan seguro es su distrito:</p>
+                <input type="radio" id="inseguro" name="seguridad" value="inseguro" />
+                <label for="inseguro">Inseguro</label>
+            
+                <input type="radio" id="seguro" name="seguridad" value="seguro" />
+                <label for="seguro">Seguro</label>
+            
+                <input type="radio" id="Mseguro" name="seguridad" value="Mseguro" />
+                <label for="Mseguro">Muy Seguro</label>
             </div>
+            <br>
 
+            <label for="robo">Veces que sufrio algun robo:</label>
+            <input type="number" name="robo" id="robo">
+
+            <div>
+                <p>La policia es efectiva en su Distrito</p>
+                <input type="radio" id="no" name="poli" value="no" />
+                <label for="no">No</label>
+            
+                <input type="radio" id="si" name="poli" value="si" />
+                <label for="si">Si</label>
+            
+                <input type="radio" id="Nseguro" name="poli" value="Nseguro" />
+                <label for="Nseguro">No estoy seguro</label>
+            </div>
+            <button>Enviar</button>
         </form>
     </div>
 </body>
